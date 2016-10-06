@@ -3,7 +3,7 @@ package org.usfirst.frc.team949.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *	Joystick Arm
+ *	JoystickArmControl command is a tele-Op command that will control arm movement with operator joystick
  */
 public class JoystickArmControl extends Command {
 	
@@ -22,12 +22,19 @@ public class JoystickArmControl extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	/*
-    	 * 
+    	 * Implemented in the Arm.java lesson.
+	 * Draw from your methods in the Arm.java subsystem to give functionality here
     	 */
     	
     	
     }
 
+
+    // WARNING! Don't change anything below!! 
+	
+	
+	
+	
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
         return false;
