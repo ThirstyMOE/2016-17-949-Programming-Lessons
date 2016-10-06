@@ -10,27 +10,38 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class Arm extends Subsystem {
 	
-	private CANTalon armMotor;
+	/*
+	 * Declare a CANTalon object in the space below
+	 */
+	
+	
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	
+	/**
+	 * The constructor for the Arm Class. Initialize the necessary motors and motor settings here.
+	 */
 	public Arm() {
-		armMotor = new CANTalon(RobotMap.armMotor);
-		invertMotor(false);
+		//Implemented in the Arm.java lesson//
+		
 	}
-
+	
+	/**
+	 * Intializes the Arm Class' default command.
+	 */
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
     
-    public void armControl(int outputValue) {
-    	armMotor.set(Math.pow(outputValue, 2));
-    }
+    /*
+     * For Arm.java Lesson: Write your methods in the space below
+     */
     
-    public void invertMotor(boolean flip) {
-    	armMotor.reverseOutput(flip);
-    }
+    
+    
+    
+    
 }
 
